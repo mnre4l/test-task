@@ -10,7 +10,7 @@ public interface StringParserService {
      * Метод предназначен для расчета частоты встреч символов в строке.
      *
      * @param string строка, для которой производится расчет.
-     * @return Map в формате символ : частота встреч символа
+     * @return Строка в формате символ : частота встреч символа.
      */
     List<String> calculateCharFrequencyIn(String string);
 }

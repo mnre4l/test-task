@@ -9,16 +9,16 @@ import org.springframework.web.bind.annotation.RestControllerAdvice;
 import javax.validation.ConstraintViolationException;
 
 /**
- * Класс предназначен для обработки ошибок
+ * Класс предназначен для обработки ошибок.
  */
 @RestControllerAdvice
 @Slf4j
 public class ErrorHandler {
     /**
-     * Обработка ошибок, связанных с валидацией
+     * Обработка ошибок, связанных с валидацией.
      *
-     * @param e обрабатываемое исключение
-     * @return сообщение об исключении
+     * @param e обрабатываемое исключение.
+     * @return сообщение об исключении.
      */
     @ExceptionHandler
     @ResponseStatus(HttpStatus.BAD_REQUEST)
@@ -28,10 +28,10 @@ public class ErrorHandler {
     }
 
     /**
-     * Обработка остальных исключений
+     * Обработка остальных исключений.
      *
-     * @param e выбрасывамое исключение
-     * @return сообщение об исключении
+     * @param e выбрасывамое исключение.
+     * @return сообщение об исключении.
      */
     @ExceptionHandler
     @ResponseStatus(HttpStatus.INTERNAL_SERVER_ERROR)

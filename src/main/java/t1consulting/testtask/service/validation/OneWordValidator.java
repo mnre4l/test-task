@@ -6,7 +6,7 @@ import javax.validation.ConstraintValidatorContext;
 
 
 /**
- * Класс предназначен для определения условий валидации, накладываемых на входную строку
+ * Класс предназначен для определения условий валидации, накладываемых на входную строку.
  */
 public class OneWordValidator implements ConstraintValidator<OneWord, String> {
     @Override
